@@ -10,3 +10,7 @@ C++ is just a wrapper around C to isolate various layers of the software for bet
 1.How to write a programme in C that allows the user to enter their initials?
 
 **(Assume it’s called AskInitials.c)**
+
+Solution
+
+>>>>[here](C-programming_in_real_life/Everyday.c/Code/main.h)
