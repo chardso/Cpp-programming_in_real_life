@@ -16,6 +16,8 @@
     }
 
 
+
+
 Explanation:
 
 Line 1: includes the standard io header file which allows for the printf and scanf functions to be used
@@ -48,6 +50,9 @@ Line 15: returns success (0) leaving the main function and exiting the program b
 
 
 If one were to refactor this program, they would probably put some parts of this into supplemental custom user defined functions although the functions would be so small (1–3 lines + braces and function declaration) that it makes little sense. It might be like this:
+
+
+
 
 void clearInitials(char *sArrInitials) 
 { 
@@ -93,6 +98,9 @@ Then the main function would be as such:
     	return(0); 
     } 
 
+
+
+
 clearInitials tests if the sArrInitials passed to it is null and if not then it frees the memory and sets it to null so it won’t be re-freed multiple times.
 displayPrompt just does the printf line
 getInitials declares and defines/instantiates it’s local copy of the sArrInitials array using the library function calloc which allocates the memory for the array and then sets every element to null. Then it does the scanf line then returns whatever the validateInitialsfunction returns.
@@ -103,7 +111,11 @@ After calling each function respectively, clearInitials must be then called to a
 One could also create a sort of stepping block to C++ object oriented programming and create a structure in C like this:
     
 
-    typedef struct 
+    
+
+
+
+typedef struct 
     { 
     	char *msPrompt; 
     	char *msInitials; 
@@ -135,11 +147,17 @@ and a destructor:
     	return(objInitials); 
     } 
 
+
+
+
 Now the only problem with these last 2 functions is that they return as tructure which will require the C compiler/runtime to make a temporary copy of the structure before returning and then it’s presumed that whatever called them would set the structure return value to a local variable. Thankfully, the structure isn’t big so copying it should be a piece of cake but it’s bad practice overall but I’m trying to demonstrate how one could make this more towards object oriented programming and C++ while still staying in the confines of the C language.
 
 Now the functions will slightly change and here below is the whole program in the pseudo OOP form:
 
-    #include<stdio.h> 
+   
+
+
+ #include<stdio.h> 
     #include<stdlib.h> 
      
     typedef struct 
@@ -213,11 +231,16 @@ Now the functions will slightly change and here below is the whole program in th
     	return(0); 
     } 
 
+
 To write this in pure C++, it would be more like:
 
 Initials.h:
 
-    #include<iostream> 
+    
+
+
+
+#include<iostream> 
     #include<string> 
      
     using namespace std; 
@@ -357,9 +380,14 @@ public: 
 	void run() const; 
 };
 
+
+
+
 App.cpp:
 
-    App::App() 
+    
+
+App::App() 
     { } 
      
     App::~App() 
@@ -377,6 +405,9 @@ App.cpp:
     	getInitials().displayInitials(); 
     } 
 
+
+
+
 This simply defines an Initials class object privately, then a default constructor that does nothing as the default constructor of Initials will be automatically called by the compiler/runtime, a destructor which does nothing because everything has its own destructor to take care of things so it’s not really needed but here for appearance, a getter to get the Initials object, and then a function run() that just does what the previous main function did. Now we will code the new main function in C++ -
 
 Main.cpp:
@@ -391,9 +422,11 @@ Main.cpp:
     	return(0); 
     } 
 
+
 There's nothing really to explain for this file as it's just calling the run function after creating the App object and after run is called and done, it returns 0 for success. Now one could wrap a try catch around the objApp.run() and return -1 or whatever else in the catch if App.run actually ever threw any exceptions (designated errors basically).
 
 So now you know how to do this in C, a pseudo OOP C, and then in C++ if you cared. As you’ll notice, the C++ is actually smaller than the C version w/ functions but all you really need is the first program written here where everything is in the main() method - but when I was in college trying to test out of Introduction to C++, I was required to take the course anyhow because I put everything in the one function when it was pathetically simple such as this so I’m showing the first program, and how one might improve it.
+
 
 C programming can do more than that.
 follow my github account if you get this content useful.
