@@ -13,4 +13,4 @@ C++ is just a wrapper around C to isolate various layers of the software for bet
 
 Solution
 
->>>>[here](C-programming_in_real_life/Everyday.c/Code/main.h)
+>>>>[here](Cpp-programming_in_real_life/Everyday.c/Code/main.h)
