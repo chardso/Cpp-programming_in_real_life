@@ -17,6 +17,8 @@ C++ is just a wrapper around C to isolate various layers of the software for bet
 
 #### Solution
 Click 
->>>>>> [Here](https://github.com/chardso)
+>> [Here](https://github.com/chardso)
 If your inspired or follow my github account
 Ready to collaborate, learn and change lives of communities for sustainability.
+
+**TEACH ME HOW TO FISH, RATHER THAN GIVING ME FISH**
