@@ -6,6 +6,8 @@ Scholars of software engineering have imaginations on how c programming is appli
 
 ## why always C? 
 
+![](/Images/IMG_20230123_024427_584.jpg)
+
 C is the bread and butter for an engineer working on embedded platforms. There is no alternative to C when it comes to getting the right balance between speed, access to physical memory (via pointers) and readability (better than Assembly). The catch is it gives you complete and I mean complete control of the resources. This can go a long way in making or breaking the system depending on how adept you are at C. For instance, C does not have bound checking and the typecasting is weak. You can introduce disastrous security vulnerabilities like an array with no bound check in C. This can be disastrous if written by a half baked C programmer. The freedom to break all barriers and rules to make something totally defined by you is possible only with C. You can make an entire compiler or linker with C. Most Operating Systems like MacOS, Linux and Solaris is written in C.
 
 C++ is just a wrapper around C to isolate various layers of the software for better maintainability and reusability…It is more of a design philosophy and boiler plate stuff.. but at the cost of latency. Hard real time systems like a networking devices, most medical and defense equipments where each millisecond can prove critical, C comes to the rescue :) C can be a beautiful language if you know how to use it and I highly recommend students to learn C before any high level language.
