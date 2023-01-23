@@ -1,4 +1,4 @@
-# C-programming in real life
+# Cpp-programming_in_real_life
 **How C programming language is applied in our day to day lives.**
 Scholars of software engineering have imaginations on how c programming is appliied in our general day to day lives,including me,due to the demand of this i concentrated and made some research to the question and felt it's important to share my discoveries with the public .The content in this repo is a collection of ideas from a great number of developers across the globe of whom i will credit later as i near finishing of my software project.
 ## why always C? 
