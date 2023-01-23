@@ -11,6 +11,6 @@ C++ is just a wrapper around C to isolate various layers of the software for bet
 
 **(Assume it’s called AskInitials.c)**
 
+#### Solution
 
-
-
+>>>>>> [Here](/Everyday.c/Code/main.h)
