@@ -6,5 +6,7 @@ C is the bread and butter for an engineer working on embedded platforms. There i
 
 C++ is just a wrapper around C to isolate various layers of the software for better maintainability and reusability…It is more of a design philosophy and boiler plate stuff.. but at the cost of latency. Hard real time systems like a networking devices, most medical and defense equipments where each millisecond can prove critical, C comes to the rescue :) C can be a beautiful language if you know how to use it and I highly recommend students to learn C before any high level language.
 ### Programmes
+
 1.How to write a programme in C that allows the user to enter their initials?
-(Assume it’s called AskInitials.c)
+
+**(Assume it’s called AskInitials.c)**
